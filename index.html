@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
+    <link ref="text/css" rel="stylesheet" href="style.css" />
+    <title>Music Blog</title>
+    <!-- 
+        Holds metadata / information we don't see.
+            - links,  viewport info, document title, etc.
+     -->
+    <!-- 3 ways to use CSS with our doc:
+        1. Embed the CSS within a <style> tag.
+        2. Inline styling within another element.
+        3. Link a stylesheet to our HTML document. -->
+    <!-- <style>
+        body {
+            background-color: black;
+        }
+    </style> -->
+</head>
+<!-- <body style="background-color: green;"> -->
+
+<body>
+
+    <header>
+        <h1>Music Blog</h1>
+
+        <nav>
+            <ul>
+                <!-- (li>span{Home})+(li>a)*3 -->
+                <li><span>Home</span></li>
+                <li><a href="#">Get Started</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Forum</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section>
+        <h2>Welcome</h2>
+        <!-- Main specifies the main content.
+        There can only be one!
+        Cannot be a descendant (child) of:
+            - header, nav, article, aside, footer -->
+        <main>
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut officiis repudiandae voluptas
+                    voluptatum dolores unde veritatis qui repellendus! Laborum aspernatur quos unde accusamus molestias
+                    tempore dolor eos veniam! Similique, nisi. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Repudiandae vitae aut excepturi iure odit doloremque libero, sapiente neque repellat beatae culpa
+                    illum quaerat suscipit! Doloremque molestias eum quae facilis et.
+                </p>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro doloremque earum totam, illum
+                    asperiores vitae molestiae qui, impedit harum vel excepturi aliquam dignissimos ipsam maxime? Ex
+                    eveniet ipsam commodi accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                    officia laudantium saepe eaque minus vitae modi cum ab molestias inventore eligendi at, praesentium
+                    quod deleniti delectus? Incidunt laborum voluptate asperiores.</p>
+            </article>
+
+            <aside>
+                <h2>Favorite Albums</h2>
+                <!-- (a>img)*4 -->
+                <a target="_blank" href="./assets/BrokenBells_Amoeba.jpg"><img src="./assets/inYourHonor.jpg"
+                        alt="Amoeba - Broken Bells"></a>
+                <a target="_blank" href="./assets/inYourHonor.jpg"><img src="./assets/inYourHonor.jpg"
+                        alt="In Your Honor - Foo Fighters"></a>
+                <a target="_blank" href="./assets/PinkFloyd.jpg"><img src="./assets/PinkFloyd.jpg"
+                        alt="Division Bell - Pink Floyd"></a>
+                <a target="_blank" href="./assets/TVotR_seeds.jpg"><img src="./assets/TVotR_seeds.jpg"
+                        alt="Seeds - TV on the Radio"></a>
+            </aside>
+        </main>
+    </section>
+
+    <!-- Footers can contain: authorship info, copyright, contact info, a sitemap, related links/documents, back to top link -->
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed iusto minus aliquam nobis nam numquam nisi,
+            placeat quia obcaecati dignissimos, 2021 by Your Name</p>
+    </footer>
+
+</body>
+
+</html>
